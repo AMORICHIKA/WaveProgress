@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="WaveProgressControl.WaveProgress"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:WaveProgressControl"
+             d:DataContext="{d:DesignInstance Type=my:WaveProgress}"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Grid>
+        <Ellipse x:Name="CircleBorder" Stroke="#FF0289CD" StrokeThickness="3" Height="180" Width="180"/>
+        <Ellipse x:Name="ellipse" Fill="#FF00B4FF" Height="160" Width="160">
+            <Ellipse.OpacityMask>
+                <VisualBrush Visual="{Binding Path=WaveDraw}" TileMode="Tile" Viewport="0,-1,1,3" Stretch="None">
+                    <VisualBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="{Binding Path=Filling}"/>
+                        </TransformGroup>
+                    </VisualBrush.RelativeTransform>
+                </VisualBrush>
+            </Ellipse.OpacityMask>
+        </Ellipse>
+        <TextBlock Foreground="#FF0289CD"
+               FontSize="36"
+               FontWeight="SemiBold"
+               TextAlignment="Right"
+               VerticalAlignment="Center"
+               Width="84">
+            <Run Text="{Binding Path=Percent, Mode=OneWay}"/>
+            <Run Text="%" FontSize="22"/>
+        </TextBlock>
+    </Grid>
+</UserControl>
