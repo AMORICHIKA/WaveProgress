@@ -9,4 +9,5 @@
 
         WaveProgress.csproj   C# Project file.
 
-![WaveProgress](https://github.com/AMORICHIKA/WaveProgress/blob/main/image.png?raw=true)
+![WaveProgress](https://github.com/AMORICHIKA/WaveProgress/blob/main/image1.png?raw=true)
+![WaveProgress](https://github.com/AMORICHIKA/WaveProgress/blob/main/image2.png?raw=true)
