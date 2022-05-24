@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 // https://www.web-dev-qa-db-ja.com/ja/c%23/%E6%A5%95%E5%86%86%E3%82%92%E6%B3%A2%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A7%E5%A1%97%E3%82%8A%E3%81%A4%E3%81%B6%E3%81%99/834332561/
 // https://stackoverflow.com/questions/22044041/animate-circles-fill-using-sine-wave
